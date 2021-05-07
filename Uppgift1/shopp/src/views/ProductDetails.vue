@@ -73,8 +73,8 @@
                 <!-- Card body -->
                 <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
                   data-parent="#accordionEx">
-                  <div class="card-body">
-                    {{ product.desc.slice(0,500) }}
+                  <div class="card-body"> 
+                    {{ product.desc }}
                   </div>
                 </div>
               </div>
@@ -125,6 +125,7 @@ computed: {
 created() {
   this.getOneProduct(this._id)
 }
+ 
 }
 </script>
 

@@ -12,7 +12,7 @@ exports.getProduct = (req, res) => {
   //   .then(product => res.status(200).json(product))
   //   .catch(err => res.status(404).json(err))
 
-  Product.exists({ ProductList: req.params.id }, (err, result) => {
+  Product.exists({ _id: req.params.id }, (err, result) => {
     if(err) {
       return res.status(400).json(err)
     }
